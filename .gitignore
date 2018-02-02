@@ -1,0 +1,9 @@
+# .gitignore evite de valider (commiter) les fichiers binaires
+# ignorer tous les fichiers .o .a et temporaires
+*.[oa]
+*~
+# ignorer tous les fichiers dans le répertoire PHOTO
+static/PHOTO/
+# ignorer l'executable creer avec go build
+gallery
+
