@@ -1,0 +1,217 @@
+/* =======================================
+STYLE.CSS
+ppizz 2017 V0.1 photogrid
+=========================================*/
+
+* {
+  color: #636366;
+}
+
+html,
+body {
+height: 100%;
+width: 100%;
+margin: 0;
+padding: 0;
+left: 0;
+top: 0;
+font-size: 100%;
+background: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  text-decoration: line-through;
+}
+
+.m-bottom {
+  margin-bottom: 48px;
+}
+/* GRID  */
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.body-content {
+  background: #dddddd;
+  padding: 10px 0 120px 0;
+  position: relative;
+  z-index: 0 !important;
+}
+
+.body-content > .container {
+  position: relative;
+  /* au lieu de 100px */
+  top: 40px;
+  padding-bottom: 40px;
+}
+
+
+.jumbotron {
+  background: #FE7880;
+  background-image: linear-gradient(#8BF3D6, #789BFE);
+  height: 400px;
+  width: 100%;
+  z-index: 100 !important;
+}
+
+.jumbotron h1,
+.jumbotron h2 {
+  color: #fff;
+}
+
+button
+{
+  height: 48px;
+  width: 180px;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 200;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+
+button:hover {
+  background: #fff;
+  color: #FE7880;
+}
+
+button:active {
+  outline: none;
+}
+
+.btn-secondary {
+  border: 1px solid #FE7880;
+  color: #FE7880;
+}
+
+.btn-secondary:hover {
+  background: #FE7880;
+  color: #fff;
+}
+
+
+footer {
+  background: #FE7880;
+  /* background: #F38BD3; */
+  background-image: linear-gradient(#FE7880, #F38BD3);
+  padding-bottom: 80px;
+}
+
+footer p {
+  color: #fff;
+}
+
+
+/* IMAGES */
+
+.img {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* === Gallery mosaic ===*/
+
+#mosaic {
+  position: relative; 
+  width: 100%;
+  float: left;
+ }
+
+.photo {
+  position: relative; 
+ z-index: 20;
+ float: left; 
+ border: solid 2px blue;
+  margin: 0 5px 10px 0;
+  width: 300px;
+  height: 350px;
+  background-color: white;
+}
+
+.photo img{
+  width: 300px;
+  height: 200px;
+   margin-top: 50px;
+}
+.photo.portrait img{
+  -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+ margin-top: 50px;   
+}
+
+.divcaption {
+  display: block;
+  color: blue;
+  margin-top: 10px; 
+}
+
+.divcaption.portrait {
+   margin-top: 50px; 
+}
+
+/*	positionne les notes dans figcaption � Droite sur la meme ligne */
+.star {
+	float: right;
+	font-size: 2em;
+  color: orange;
+}
+
+.pivot{
+transform: rotate(-90deg);
+}
+
+/* === MEDIA QUERIES === */
+
+@media only screen and (min-width: 720px) {
+  .jumbotron {
+    height: 280px;
+  }
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+  .container {
+    width: 75%;
+    max-width: 80rem;
+  }
+}
