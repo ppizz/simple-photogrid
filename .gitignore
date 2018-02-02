@@ -2,8 +2,8 @@
 # ignorer tous les fichiers .o .a et temporaires
 *.[oa]
 *~
-# ignorer tous les fichiers dans le répertoire PHOTO
-static/PHOTO/
+# ne pas ignorer les fichiers dans le répertoire PHOTO
+# static/PHOTO/
 # ignorer l'executable creer avec go build
 gallery
 
