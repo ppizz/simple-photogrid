@@ -1,0 +1,6 @@
+# .gitignore
+# ignorer tous les fichiers .o .a et temporaires
+*.[oa]
+*~
+# ignorer l executable
+gallery
