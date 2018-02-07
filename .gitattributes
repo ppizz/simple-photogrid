@@ -1,2 +1,4 @@
 	
+# .gitattributes
+# reset les statistiques language pour le dossier static 
 static/* linguist-vendored
